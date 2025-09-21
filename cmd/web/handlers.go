@@ -43,7 +43,6 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 	app.render(w, r, http.StatusOK, "view.tmpl", templateData{
 		Snippet: snippet,
 	})
-
 }
 
 func (app *application) snippetCreate(w http.ResponseWriter, r *http.Request) {
