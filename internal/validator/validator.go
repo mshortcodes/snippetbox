@@ -26,7 +26,7 @@ func (v *Validator) AddFieldError(key, message string) {
 
 func (v *Validator) CheckField(ok bool, key, message string) {
 	if !ok {
-		v.FieldErrors[key] = message
+		v.AddFieldError(key, message)
 	}
 }
 
